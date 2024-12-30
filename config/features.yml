@@ -54,7 +54,7 @@
 - name: voice_recorder
   enabled: true
 - name: mobile_v2
-  enabled: false
+  enabled: true
 - name: channel_website
   enabled: true
 - name: campaigns
@@ -72,10 +72,10 @@
 - name: custom_reply_domain
   enabled: true
 - name: audit_logs
-  enabled: true
+  enabled: false
   premium: true
 - name: response_bot
-  enabled: true
+  enabled: false
   premium: true
 - name: message_reply_to
   enabled: true
@@ -85,18 +85,18 @@
 - name: inbox_view
   enabled: true
 - name: sla
-  enabled: true
+  enabled: false
   premium: true
   help_url: https://chwt.app/hc/sla
 - name: help_center_embedding_search
   enabled: false
   premium: true
 - name: linear_integration
-  enabled: false
-- name: captain_integration
-  enabled: false
-- name: custom_roles
   enabled: true
+- name: captain_integration
+  enabled: true
+- name: custom_roles
+  enabled: false
   premium: true
 - name: hide_all_chats_for_agent
   enabled: false
