@@ -8,8 +8,8 @@ name: Publish Chatwoot CE docker images for AMD64
 on:
   push:
     branches:
-      - develop
-      - master
+      #- develop
+      #- master
       - main
     tags:
       - v*
