@@ -20,7 +20,7 @@
 #  conversation_id           :integer          not null
 #  inbox_id                  :integer          not null
 #  sender_id                 :bigint
-#  source_id                 :string(510)
+#  source_id                 :string(512)
 #
 # Indexes
 #
@@ -192,7 +192,7 @@ class Message < ApplicationRecord
       id: id,
       inbox: inbox.webhook_data,
       message_type: message_type,
-      status: status,
+      status: deleted ? 'deleted' : status,
       private: private,
       sender: sender.try(:webhook_data),
       source_id: source_id
